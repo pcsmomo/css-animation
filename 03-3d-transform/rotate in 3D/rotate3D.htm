@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>translate in 3D</title>
+<style type="text/css">
+
+body {
+	perspective: 500px;
+}
+
+img {
+	width: 300px;
+	display: block;
+	margin: auto;
+	margin-top: 200px;
+	transition: transform 1s;
+}
+
+img:hover {
+
+	/* rotate() and rotateZ() are the same */
+	/* transform: rotate(120deg); */
+	/* transform: rotateZ(120deg); */
+
+	transform: rotateX(60deg);
+	/* transform: rotateY(60deg); */
+}
+
+</style>
+</head>
+
+<body>
+
+	<img src="cat.jpg" alt="">
+
+</body>
+</html>
