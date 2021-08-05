@@ -6,6 +6,9 @@ Creative Advanced CSS Animations - Create 100 Projects! by Ahmed Sadek
 <details>
   <summary>Click to Contract/Expend</summary>
 
+### 5. what properties can be transitioned ?
+[MDN - Animatable CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties)
+
 ### 9. CSS rotate function
 ```css
 img:hover {
@@ -13,6 +16,11 @@ img:hover {
   transform: rotate(-0.5turn); /* -180deg */
   transform: rotate(200grad); /* 180deg */
 }
+```
+
+### 11. transform origin
+```css
+transform-origin: 20% 80%;
 ```
 
 </details>
