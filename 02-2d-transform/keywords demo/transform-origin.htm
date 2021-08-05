@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Transition</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+<style type="text/css">
+
+div {
+	width: 150px;
+	height: 150px;
+	background-color: #27ae60;
+	display: block;
+	margin: auto;
+	margin-bottom: 70px;
+	color: white;
+	font-size: 24px;
+	font-family: 'Roboto Slab', serif;
+	text-align: center;
+	line-height: 150px;
+	transition: transform 1s;
+}
+
+div:hover {
+	transform: rotate(45deg);
+}
+
+
+.top {
+	transform-origin: top;
+}
+
+.right {
+	transform-origin: right;
+}
+
+.left {
+	transform-origin: left;
+}
+
+.bottom {
+	transform-origin: bottom;
+}
+
+.top-right {
+	transform-origin: top right;
+}
+
+.top-left {
+	transform-origin: top left;
+}
+
+.bottom-right {
+	transform-origin: bottom right;
+}
+
+.bottom-left {
+	transform-origin: bottom left;
+}
+
+</style>
+</head>
+
+<body>
+
+	<div class="top">top</div>
+	<div class="right">right</div>
+	<div class="bottom">bottom</div>
+	<div class="left">left</div>
+	<div class="top-right">top right</div>
+	<div class="bottom-right">bottom right</div>
+	<div class="bottom-left">bottom left</div>
+	<div class="top-left">top left</div>
+
+</body>
+</html>
