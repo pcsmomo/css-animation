@@ -5,3 +5,52 @@ body {
   align-items: center;
   font-family: 'Lato', sans-serif;
 }
+
+.container {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: all 0.5s;
+  background-color: black;
+  transform: translateX(-100%);
+  /* transform: translateY(-100%); */
+}
+
+.caption h1 {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.caption p {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.container:hover .caption {
+  transform: translateX(0);
+  /* transform: translateY(0); */
+}
+
+.container:hover img {
+  transform: translateX(100%);
+  /* transform: translateY(100%); */
+}
