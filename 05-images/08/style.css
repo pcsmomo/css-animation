@@ -16,7 +16,6 @@ body {
   width: 450px;
   height: 300px;
   position: relative;
-  overflow: hidden;
 }
 
 img {
@@ -28,12 +27,10 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 120%;
-  height: 205%;
+  width: 100%;
+  height: 100%;
   background-color: #2d3436;
   opacity: 0.8;
-  transition: all 0.25s;
-  transform: translate(550px, 300px) rotate(45deg);
 }
 
 .caption {
@@ -55,8 +52,6 @@ h2 {
   padding: 20px;
   margin-top: 20px;
   background-color: rgba(0, 0, 0, 0.8);
-  transform: translate(200px, -200px);
-  transition: all 0.25s;
 }
 
 p {
@@ -64,8 +59,6 @@ p {
   width: 80%;
   align-self: center;
   text-align: center;
-  transform: translate(-200px, 200px);
-  transition: all 0.25s;
 }
 
 a {
@@ -76,6 +69,48 @@ a {
   padding: 15px;
   margin-bottom: 20px;
   align-self: center;
-  transition: all 0.25s;
-  transform: translateY(100px);
+}
+
+/* OUR EFFECT STYLES GOES HERE */
+.container:before {
+  transform: translate(650px, -100px) rotate(180deg);
+  transition: all 0.2s;
+}
+
+.container:hover:before {
+  transform: translate(0, 0) rotate(0deg);
+}
+
+h2 {
+  transform: translateY(-150px);
+  transition: all 0.2s;
+}
+
+.container:hover h2 {
+  transform: translateY(0px);
+  transition-delay: 0.5s;
+}
+
+p {
+  transform: translateX(300px) rotate(90deg);
+  transition: all 0.2s;
+}
+
+.container:hover p {
+  transform: translateX(0) rotate(0deg);
+  transition-delay: 0.4s;
+}
+
+a {
+  transform: translateY(-300px);
+  transition: all 0.2s;
+}
+
+.container:hover a {
+  transform: translateY(0);
+  transition-delay: 0.3s;
+}
+
+.container {
+  overflow: hidden;
 }
