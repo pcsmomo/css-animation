@@ -5,3 +5,149 @@ body {
   align-items: center;
   font-family: sans-serif;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+ul li a {
+  display: block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.5s;
+  color: #262626;
+}
+
+a:hover {
+  color: white;
+}
+
+ul li span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: #262626;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  transform: scaleY(0);
+  transition: all 0.5s;
+  transform-origin: top;
+}
+
+a:hover span {
+  transform: scaleY(1);
+}
+
+span:nth-child(2) {
+  left: 25%;
+  transition-delay: 0.15s;
+}
+
+span:nth-child(3) {
+  left: 50%;
+  transition-delay: 0.3s;
+}
+
+span:nth-child(4) {
+  left: 75%;
+  transition-delay: 0.45s;
+}
+
+/* Second Effect */
+/* ul li span {
+  width: 100%;
+  height: 25%;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+
+a:hover span {
+  transform: scaleY(1);
+}
+
+span:nth-child(2) {
+  top: 25%;
+  left: 0;
+  transition-delay: 0.15s;
+}
+
+span:nth-child(3) {
+  top: 50%;
+  left: 0;
+  transition-delay: 0.3s;
+}
+
+span:nth-child(4) {
+  top: 75%;
+  left: 0;
+  transition-delay: 0.45s;
+} */
+
+/* Third Effect */
+/* ul li span {
+  width: 100%;
+  height: 25%;
+  transform: scaleX(0);
+  transform-origin: top;
+}
+
+a:hover span {
+  transform: scaleX(1);
+}
+
+span:nth-child(2) {
+  top: 25%;
+  left: 0;
+  transition-delay: 0.15s;
+}
+
+span:nth-child(3) {
+  top: 50%;
+  left: 0;
+  transition-delay: 0.3s;
+}
+
+span:nth-child(4) {
+  top: 75%;
+  left: 0;
+  transition-delay: 0.45s;
+} */
+
+/* Fourth Effect */
+/* ul li span {
+  width: 100%;
+  height: 25%;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+a:hover span {
+  transform: scaleX(1);
+}
+
+span:nth-child(2) {
+  top: 25%;
+  left: 0;
+  transition-delay: 0.15s;
+}
+
+span:nth-child(3) {
+  top: 50%;
+  left: 0;
+  transition-delay: 0.3s;
+}
+
+span:nth-child(4) {
+  top: 75%;
+  left: 0;
+  transition-delay: 0.45s;
+} */
