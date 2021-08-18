@@ -8,3 +8,61 @@ body {
   align-items: center;
   font-family: 'Raleway', arial, sans-serif;
 }
+
+.card {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(45deg, #d41e31, #491f8f);
+  border-radius: 20px;
+}
+
+img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 400px;
+  transition: 0.5s;
+}
+
+.card:hover img {
+  height: 450px;
+  left: 80%;
+}
+
+.content {
+  position: relative;
+  width: 40%;
+  left: 20%;
+  color: white;
+  text-transform: capitalize;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.card:hover .content {
+  left: 5%;
+  opacity: 1;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+a {
+  position: relative;
+  display: inline-block;
+  color: #111;
+  padding: 5px 10px;
+  background: white;
+  text-decoration: none;
+  border-radius: 10px;
+}
