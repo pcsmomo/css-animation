@@ -38,4 +38,12 @@ a {
 }
 ```
 
+### 67. creative layered card hover effect
+
+```css
+img {
+  object-fit: cover;
+}
+```
+
 </details>
