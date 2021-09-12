@@ -7,10 +7,10 @@ div {
   height: 150px;
   background-color: red;
   animation-name: moving;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-fill-mode: both;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; /* normal | reverse | alternate | alternate-reverse */
 }
 
 @keyframes moving {
