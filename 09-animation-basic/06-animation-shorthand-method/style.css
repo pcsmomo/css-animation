@@ -9,8 +9,12 @@ div {
   animation-name: moving;
   animation-duration: 3s;
   animation-fill-mode: both;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
+  animation-iteration-count: 3;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+  animation-delay: 1s;
+  /* duration time first, delay time later */
+  animation: moving 3s both 3 ease-in alternate 1s;
 }
 
 @keyframes moving {
