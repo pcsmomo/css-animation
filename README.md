@@ -46,4 +46,10 @@ img {
 }
 ```
 
+```css
+div {
+  animation-fill-mode: both; /* none | forwards | backwords | both */
+}
+```
+
 </details>

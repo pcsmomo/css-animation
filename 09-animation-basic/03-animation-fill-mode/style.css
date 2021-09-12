@@ -7,15 +7,17 @@ div {
   height: 150px;
   background-color: red;
   animation-name: moving;
-  animation-duration: 3s;
+  animation-duration: 5s;
+  animation-fill-mode: both; /* none | forwards | backwords | both */
+  animation-delay: 3s;
 }
 
 @keyframes moving {
   0% {
-    transform: translateX(0);
+    transform: translateX(500px);
   }
 
-  10% {
+  50% {
     transform: translateX(1000px);
   }
 
