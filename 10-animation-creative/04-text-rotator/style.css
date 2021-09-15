@@ -5,3 +5,28 @@ body {
   align-items: center;
   background-color: #ea2027;
 }
+
+h1 {
+  color: white;
+  font-size: 50px;
+}
+
+span:before {
+  content: 'TRANSITIONS';
+  text-transform: uppercase;
+  font-family: arial;
+  color: #1b1464;
+  animation: word-switch 3s infinite;
+}
+
+@keyframes word-switch {
+  0% {
+    content: 'transitions';
+  }
+  33% {
+    content: 'animations';
+  }
+  66% {
+    content: 'transforms';
+  }
+}
