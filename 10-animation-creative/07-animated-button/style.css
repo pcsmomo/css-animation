@@ -5,3 +5,43 @@ body {
   align-items: center;
   background-color: #222;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  font-size: 40px;
+  border: 3px solid white;
+  padding: 40px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+a:before {
+  content: '';
+  background-color: #f44336;
+  top: 0;
+  left: 0px;
+  width: 120px;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  transform: skew(-15deg);
+  animation: moving 1.2s linear infinite;
+  transition: all 0.5s;
+}
+
+@keyframes moving {
+  from {
+    left: -120px;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+a:hover:before {
+  width: 100%;
+  transform: skew(0deg);
+  animation: none;
+}
