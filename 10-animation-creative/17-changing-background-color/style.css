@@ -3,5 +3,34 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
+  animation: bgchange 10s infinite;
+}
+
+h1 {
+  font-size: 70px;
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+}
+
+@keyframes bgchange {
+  0% {
+    background-color: #272727;
+  }
+  20% {
+    background-color: blue;
+  }
+  40% {
+    background-color: tomato;
+  }
+  60% {
+    background-color: lightblue;
+  }
+  80% {
+    background-color: darkgreen;
+  }
+  100% {
+    background-color: #272727;
+  }
 }
