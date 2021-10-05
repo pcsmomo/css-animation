@@ -7,3 +7,37 @@ body {
   align-items: center;
   background-color: #272727;
 }
+
+.slider {
+  width: 800px;
+  height: 400px;
+  background: url(img-1.jpg);
+  animation: change-bg 10s linear infinite;
+}
+
+@keyframes change-bg {
+  0% {
+    background: url(img-1.jpg);
+  }
+  20% {
+    background: url(img-1.jpg);
+  }
+  25% {
+    background: url(img-2.jpg);
+  }
+  45% {
+    background: url(img-2.jpg);
+  }
+  50% {
+    background: url(img-3.jpg);
+  }
+  70% {
+    background: url(img-3.jpg);
+  }
+  75% {
+    background: url(img-4.jpg);
+  }
+  100% {
+    background: url(img-4.jpg);
+  }
+}
