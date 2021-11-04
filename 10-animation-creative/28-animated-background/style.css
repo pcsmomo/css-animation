@@ -3,3 +3,109 @@ body {
   height: 100vh;
   background-color: #333;
 }
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-transform: uppercase;
+  font-size: 45px;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+}
+
+.square {
+  position: absolute;
+  bottom: -100px;
+  background-color: #f2f2f2;
+  animation: boxes 10s infinite ease-in-out;
+}
+
+.square:nth-child(1) {
+  width: 75px;
+  height: 75px;
+  left: 7%;
+}
+
+.square:nth-child(2) {
+  width: 65px;
+  height: 65px;
+  left: 15%;
+  animation-delay: 4s;
+}
+
+.square:nth-child(3) {
+  width: 82px;
+  height: 82px;
+  left: 45%;
+  animation-delay: 8s;
+}
+
+.square:nth-child(4) {
+  width: 70px;
+  height: 70px;
+  left: 55%;
+  animation-delay: 2s;
+}
+
+.square:nth-child(5) {
+  width: 60px;
+  height: 60px;
+  left: 27%;
+  animation-delay: 6s;
+}
+
+.square:nth-child(6) {
+  width: 55px;
+  height: 55px;
+  left: 60%;
+  animation-delay: 4s;
+}
+
+.square:nth-child(7) {
+  width: 90px;
+  height: 90px;
+  left: 85%;
+  animation-delay: 9s;
+}
+
+.square:nth-child(8) {
+  width: 70px;
+  height: 70px;
+  left: 75%;
+  animation-delay: 4s;
+}
+
+.square:nth-child(9) {
+  width: 45px;
+  height: 45px;
+  left: 10%;
+  animation-delay: 7s;
+}
+
+.square:nth-child(10) {
+  width: 55px;
+  height: 55px;
+  left: 60%;
+  animation-delay: 7s;
+}
+
+@keyframes boxes {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100%;
+    transform: rotate(180deg);
+    opacity: 0;
+  }
+}
