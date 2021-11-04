@@ -6,3 +6,52 @@ body {
   align-items: center;
   background-color: #0a3d62;
 }
+
+.loader {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+span {
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+span:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    width: 0;
+    height: 0;
+  }
+}
+
+.s4:before,
+.s5:before,
+.s6:before {
+  animation-delay: 0.1s;
+}
+
+.s7:before,
+.s8:before,
+.s9:before {
+  animation-delay: 0.2s;
+}
