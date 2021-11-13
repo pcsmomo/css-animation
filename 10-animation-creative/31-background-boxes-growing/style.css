@@ -1,5 +1,78 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: #192a56;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h2 {
+  margin: 0;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 45px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.box {
+  position: absolute;
+  top: 80%;
+  left: 45%;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #003298;
+  animation: boxes 12s linear infinite;
+  transform: scale(0);
+}
+
+.box:nth-child(2) {
+  top: 40%;
+  left: 25%;
+  border-color: red;
+  animation-delay: 2s;
+}
+
+.box:nth-child(3) {
+  top: 50%;
+  left: 75%;
+  animation-delay: 4s;
+}
+
+.box:nth-child(4) {
+  top: 10%;
+  left: 90%;
+  border-color: red;
+  animation-delay: 6s;
+}
+
+.box:nth-child(5) {
+  top: 85%;
+  left: 10%;
+  animation-delay: 8s;
+}
+
+.box:nth-child(6) {
+  top: 10%;
+  left: 50%;
+  border-color: red;
+  animation-delay: 10s;
+}
+
+@keyframes boxes {
+  0% {
+    transform: scale(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(20) rotate(960deg);
+    opacity: 0;
+  }
 }
