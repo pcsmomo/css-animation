@@ -60,4 +60,21 @@ div {
 
 [Clippy - Clip path polygon](https://bennettfeely.com/clippy/)
 
+### 118. black to white and white to black text effect using CSS clip path
+
+if
+
+```css
+/* if the number of vertexes are different, trasition won't work */
+h1:nth-child(2) {
+  transition: all 0.5s;
+  /* clip-path: polygon(0 0, 100% 0, 100% 0); */
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0% 100%);
+}
+
+h1:nth-child(2):hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+```
+
 </details>
