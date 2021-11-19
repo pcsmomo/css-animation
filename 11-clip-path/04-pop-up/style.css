@@ -9,3 +9,25 @@ body {
   align-items: center;
   font-family: "Raleway", Arial, sans-serif;
 }
+
+.card {
+  width: 500px;
+  height: 250px;
+  background-color: #c7ecee;
+  padding: 20px 80px 20px 20px;
+  border-radius: 10px;
+  transition: all 0.5s;
+  clip-path: circle(7% at 93% 20%);
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.card:hover {
+  clip-path: circle(70.7% at 50% 50%);
+}
