@@ -9,3 +9,52 @@ body {
   align-items: center;
   font-family: "Raleway", Arial, sans-serif;
 }
+
+.loader {
+  width: 300px;
+  height: 60px;
+  border: 7px solid #0a3d62;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.top-half {
+  color: #ee5253;
+  animation: split 4s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+}
+
+.bottom-half {
+  color: #0a3d62;
+  animation: split 4s linear infinite reverse;
+  clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+}
+
+@keyframes split {
+  0% {
+    transform: translateX(100%);
+  }
+  40% {
+    transform: translateX(0);
+  }
+  60% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

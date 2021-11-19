@@ -56,4 +56,8 @@ div {
 
 [freepik - free images](https://www.freepik.com/)
 
+### 113. what is the CSS clip path property and how we can use it o create shapes
+
+[Clippy - Clip path polygon](https://bennettfeely.com/clippy/)
+
 </details>
