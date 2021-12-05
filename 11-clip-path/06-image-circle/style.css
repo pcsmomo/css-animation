@@ -7,3 +7,71 @@ body {
   align-items: center;
   font-family: sans-serif;
 }
+
+.card {
+  position: relative;
+  width: 335px;
+  height: 500px;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+  clip-path: circle(70.7% at 50% 50%);
+}
+
+img {
+  width: 100%;
+}
+
+.card:hover .img {
+  clip-path: circle(18.2% at 50% 38%);
+}
+
+.content {
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+  text-align: center;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+p {
+  margin-bottom: 25px;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  text-transform: capitalize;
+}
+
+h2,
+p,
+a {
+  opacity: 0;
+  transition: 0.3s;
+  transform: translateY(20px);
+}
+
+.card:hover h2,
+.card:hover p,
+.card:hover a {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s;
+}
